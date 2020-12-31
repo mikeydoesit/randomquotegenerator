@@ -1,5 +1,83 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+}
+.AppBgd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1f1f1f;
+}
+#quote-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #272727;
+  border-radius: 7px;
+  color: #ffffff;
+  padding: 2% 2% 0 2%;
+  max-width: 75vw;
+}
+
+#quote-box .textWrapper {
+  background-color: #414141;
+  border-radius: 7px;
+  padding: 3%;
+}
+#quote-box .textWrapper #text {
+  width: 100%;
+}
+#quote-box .textWrapper #author {
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+  margin-top: 10px;
+}
+
+#quote-box .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  padding: 4%;
+}
+
+#quote-box .buttons .socMed {
+  display: flex;
+  flex-direction: row;
+}
+#quote-box .buttons .socMed a {
+  color: #ffffff;
+  padding-right: 7px;
+}
+
+#quote-box .buttons #new-quote {
+  font-weight: bold;
+  cursor: pointer;
+  height: 2.1em;
+  padding: 0 10px;
+  line-height: 0;
+  border-radius: 16px;
+  border: none;
+  color: #ffffff;
+  background: #12c2e9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f64f59,
+    #c471ed,
+    #12c2e9
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f64f59,
+    #c471ed,
+    #12c2e9
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#quote-box .buttons #new-quote:focus {
+  outline: none;
 }
 
 .App-logo {
